@@ -7,6 +7,7 @@
     <groupId>com.marsjin.jinzr.code.spring</groupId>
     <artifactId>spring-mybatis-maven</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
 
     <properties>
@@ -124,5 +125,22 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.29</version>
         </dependency>
+
+        <!-- javaee-api包 注意和项目使用的JDK版本对应 -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>6.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javaee-web-api包 注意和项目使用的JDK版本对应 -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-web-api</artifactId>
+            <version>6.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
+
 </project>
